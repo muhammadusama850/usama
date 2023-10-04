@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <link rel="stylesheet" href="./animate.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="ani">
+        <h1>Animatiion Effects</h1>
+    </div>
+    <div id="btn">
+        <button style="margin-top: 20px;">Animate</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('#ani').animate({
+                    width:'400px',
+                    marginLeft:'300px',
+                    fontSize:'30px',
+                    height:'400px',
+                },4000).delay(1000);
+                $('#ani').animate({
+                    width:'400px',
+                    marginLeft:'300px',
+                    marginTop:'300px',
+                    borderRadius:'50%',
+                    fontSize:'16px',
+                    height:'500px',
+                },2000).delay(1000);
+                $('#ani').animate({
+                    width:'400px',
+                    marginLeft:'300px',
+                    marginTop:'600px',
+                    borderRadius:'-50%',
+                    fontSize:'22px',
+                    height:'600px',
+                },500).delay(4000);
+                $('#ani').animate({
+                    width:'400px',
+                    marginLeft:'600px',
+                    marginTop:'900px',
+                    borderRadius:'20%',
+                    fontSize:'18pxpx',
+                    height:'400px',
+                },1000).delay(1000);
+            })
+        })
+    </script>
+</body>
+</html>

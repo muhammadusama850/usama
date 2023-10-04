@@ -1,0 +1,13 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: aqua;
+}
+#ani{
+    width: 200px;
+    height: 300px;
+    background-color: darkolivegreen;
+    color: rgb(19, 17, 17);
+    display: flex;
+    justify-content: center;
+}
